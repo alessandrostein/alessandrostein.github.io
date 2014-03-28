@@ -45,6 +45,12 @@ a small {
   display:block;
 }
 
+.banner {
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto
+}
+
 .wrapper {
   width:860px;
   margin:0 auto;
