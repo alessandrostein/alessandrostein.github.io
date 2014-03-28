@@ -190,6 +190,10 @@ footer {
   bottom:50px;
 }
 
+.my-banner{
+  text-align: center;
+}
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
