@@ -2,9 +2,9 @@
 
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Museo 700 Regular", helvetica, arial, sans-serif;
   color:#777;
-  font-weight:300;
+  font-eight:300;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -139,8 +139,7 @@ header ul a {
 }
 
 strong {
-  color:#222;
-  font-weight:700;
+  color:#0000FF;
 }
 
 header ul li + li {
@@ -185,10 +184,6 @@ footer {
 
 .my-banner{
   text-align: center;
-}
-
-strong{
-  color: 3333FF;
 }
 
 @media print, screen and (max-width: 960px) {
