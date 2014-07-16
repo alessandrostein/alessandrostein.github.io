@@ -1,30 +1,21 @@
-<html>
+<!doctype html>
   <head>
+    <script src="https://apis.google.com/js/client.js"></script>
     <script>
-      function appendResults(text) {
-        var results = document.getElementById('results');
-        results.appendChild(document.createElement('P'));
-        results.appendChild(document.createTextNode(text));
-        alert(results);
-      }
-
-      function makeRequest() {
-        var request = gapi.client.urlshortener.url.get({
-          'shortUrl': 'http://goo.gl/fbsS'
+      function auth() {
+        var config = {
+          'client_id': '718466606722-74q8hdi2v1n0sc4v188dm87l78pgjl3t.apps.googleusercontent.com',
+          'scope': 'https://www.googleapis.com/auth/urlshortener'
+        };
+        gapi.auth.authorize(config, function() {
+          console.log('login complete');
+          console.log(gapi.auth.getToken());
         });
-        request.execute(function(response) {
-          appendResults(response.longUrl);
-        });
-      }
-
-      function load() {
-        gapi.client.setApiKey('otjKBmXEJ0tJ5Vz0YXb1l0EA');
-        gapi.client.load('urlshortener', 'v1', makeRequest);
       }
     </script>
-    <script src="https://apis.google.com/js/client.js?onload=load"></script>
   </head>
+
   <body>
-    <div id="results"></div>
+    <button onclick="auth();">Authorize</button>
   </body>
 </html>
