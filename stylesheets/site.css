@@ -20,6 +20,7 @@ h1, h2, h3 {
 
 ul {
   list-style: none;
+  padding-left: 0px
 }
 
 ul li {
@@ -102,10 +103,6 @@ ul li {
   padding-bottom: 5px;
 }
 
-.profile-links ul {
-  padding-left: 0px
-}
-
 .profile-links ul li {
   margin-left: 10px;
 }
@@ -149,15 +146,19 @@ ul li {
 
 @media (max-width: 480px) {
   .profile-header h1 {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .profile-job h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .profile-links a {
     font-size: 12px;
+  }
+
+  .profile-links ul li {
+    margin-left: 5px;
   }
 
   .profile-local h3 {
@@ -165,12 +166,13 @@ ul li {
   }
 
   .profile-skils ul li {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .profile-picture .image {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
   }
 
 }
