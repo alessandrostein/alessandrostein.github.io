@@ -142,7 +142,7 @@
           <h1>Alessandro Stein</h1>
         </div>
         <div class="profile-job">
-          <h2>Lead Software Engineer at <a href="https://www.mecasei.com" target="_blank">Mecasei.com</a></h2>
+          <h2>Lead Software Engineer at <a href="https://www.mecasei.com" id="mecasei" target="_blank">Mecasei.com</a></h2>
         </div>
         <div class="separator"></div>
         <div class="profile-local">
@@ -199,6 +199,51 @@
               "request": "event",
               "vars": {
                 "eventCategory": "social-linkedin",
+                "eventAction": "click"
+              }
+            },
+            "trackEvent": {
+              "selector": "#mailer",
+              "on": "click",
+              "request": "event",
+              "vars": {
+                "eventCategory": "social-email",
+                "eventAction": "click"
+              }
+            },
+            "trackEvent": {
+              "selector": "#twitter",
+              "on": "click",
+              "request": "event",
+              "vars": {
+                "eventCategory": "social-twitter",
+                "eventAction": "click"
+              }
+            },
+            "trackEvent": {
+              "selector": "#medium",
+              "on": "click",
+              "request": "event",
+              "vars": {
+                "eventCategory": "social-medium",
+                "eventAction": "click"
+              }
+            },
+            "trackEvent": {
+              "selector": "#github",
+              "on": "click",
+              "request": "event",
+              "vars": {
+                "eventCategory": "social-github",
+                "eventAction": "click"
+              }
+            },
+            "trackEvent": {
+              "selector": "#mecasei",
+              "on": "click",
+              "request": "event",
+              "vars": {
+                "eventCategory": "company-name",
                 "eventAction": "click"
               }
             }
