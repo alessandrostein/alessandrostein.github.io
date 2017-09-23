@@ -98,30 +98,6 @@ ul li {
   font-weight: 700;
 }
 
-.profile-links {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.profile-links ul li {
-  margin-left: 10px;
-}
-
-.profile-links a {
-  border: 1px solid rgb(120,164,199);
-  padding: 8px;
-  border-radius: 10px;
-  background-color: rgb(120,164,199);
-  font-weight: 400;
-  font-size: 13px;
-  color: #FFF;
-}
-
-.profile-links a:hover {
-  border: 1px solid rgb(29,74,137);
-  background-color: rgb(29,74,137);
-}
-
 .profile-local h3 {
   font-size: 14px;
   font-weight: 400;
@@ -133,15 +109,13 @@ ul li {
   border: 1px solid rgba(102, 102, 102, 0.09);;
 }
 
-.profile-skils {
-  margin-top: -15px;
-}
-
-.profile-skils ul li {
-  font-weight: 300;
-  color: #666;
-  margin-left: 15px;
-  font-size: 13px;
+.profile-links svg {
+  margin: 10px;
+  width: 36px;
+  height: 36px;
+  font-size: 30px;
+  line-height: 36px;
+  cursor: pointer;
 }
 
 @media (max-width: 480px) {
@@ -165,27 +139,10 @@ ul li {
     font-size: 11px;
   }
 
-  .profile-skils ul li {
-    font-size: 11px;
-  }
-
   .profile-picture .image {
     width: 100px;
     height: 100px;
     margin-top: -50px;
   }
 
-}
-
-@media print, screen and (max-width: 960px) {
-
-}
-
-@media print, screen and (max-width: 720px) {
-}
-
-@media print, screen and (max-width: 480px) {
-}
-
-@media print {
 }
