@@ -1,211 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stein Tecnologia - Build and launch Ruby on Rails applications</title>
-
+<!doctype html>
+<html>
+  <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Alessandro Stein alessandrostein fiverr ruby rails" />
+    <meta name="keywords" content="Alessandro Stein alessandrostein wedy ruby rails" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Alessandro is a Senior Ruby on Rails ">
+    <meta name="description" content="Alessandro is a Lead Software Engineer at Wedy since 2014">
     <meta property="og:url" content="http://www.alessandrostein.com/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Alessandro Stein">
     <meta property="og:image" content="imagens/alessandrostein.jpg">
     <meta property="og:site_name" content="Alessandro Stein">
-    <meta property="og:description" content="Alessandro is a Senior Ruby on Rails ">
+    <meta property="og:description" content="Alessandro is a Lead Software Engineer at Wedy since 2014">
 
     <link rel="shortcut icon" type="image/png" href="imagens/favicon.png"/>
-    <!--
-        For more customization options, we would advise
-        you to build your TailwindCSS from the source. 
-        https://tailwindcss.com/docs/installation
-    -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.10/tailwind.min.css">
-    <!-- Small CSS to Hide elements at 1520px size -->
-    <style>
-        @media(max-width:1520px){
-            .left-svg{
-                display:none;
-            }
-        }
-        /* small css for the mobile nav close */
-        #nav-mobile-btn.close span:first-child{
-            transform: rotate(45deg);
-            top: 4px;
-            position: relative;
-            background:#a0aec0;
-        }
-        #nav-mobile-btn.close span:nth-child(2){
-            transform: rotate(-45deg);
-            margin-top: 0px;
-            background:#a0aec0;
-        }
-    </style>
-</head>
-<body class="antialiased overflow-x-hidden">
-    <!-- BEGIN HERO SECTION -->
-    <div class="w-full justify-center items-center relative  overflow-x-hidden lg:pt-20 lg:pb-40 xl:pt-20 xl:pb-64">
-        <div class="container max-w-6xl mx-auto h-full flex flex-col lg:flex-row justify-between items-center -mt-32 px-8 xl:px-0">
-            <div class="flex flex-col items-center lg:items-start w-full max-w-xl lg:w-1/2 pt-48 lg:pt-20 xl:pt-40 text-center lg:text-left z-30">
-                <h1 class="text-gray-900 font-black text-3xl sm:text-6xl leading-tight relative mb-4 xl:mb-8">Build and launch Ruby on Rails applications</h1>
-                <p class="text-base sm:text-lg xl:text-xl text-gray-600 mb-8 pr-0 lg:pr-20">We help entrepreneurs build and launch or maintenance web applications on time, on target, and on budget.</p>
-                <a href="https://zapie.xyz/#/alessandro" target="_blank" class="mt-0 sm:mt-1 px-8 py-4 rounded-md fold-bold text-base bg-red-600 shadow-xl text-white border-t border-gray-200 w-auto font-bold relative self-start inline-block lg:mx-0 mx-auto">
-                  Get a Quote Now!
-                </a>
-                <!-- Integrates with section -->
-                <div class="hidden sm:flex flex-col mt-12 lg:mt-12">
-                    <p class="text-gray-500 uppercase font-medium tracking-widest mb-4 text-sm">Keep in touch</p>
-                    <div class="flex">
-                      <a href="https://zapie.xyz/#/alessandro" target="_blank">
-                        <svg class="h-8 mr-4 fill-current text-gray-500 transition-color duration-150 hover:text-gray-600 cursor-pointer" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>WhatsApp icon</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
-                      </a>
-                      <a href="https://telegram.me/alessandrostein" target="_blank">
-                        <svg class="h-8 mr-4 fill-current text-gray-500 transition-color duration-150 hover:text-gray-600 cursor-pointer" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Telegram icon</title><path d="M23.91 3.79L20.3 20.84c-.25 1.21-.98 1.5-2 .94l-5.5-4.07-2.66 2.57c-.3.3-.55.56-1.1.56-.72 0-.6-.27-.84-.95L6.3 13.7l-5.45-1.7c-1.18-.35-1.19-1.16.26-1.75l21.26-8.2c.97-.43 1.9.24 1.53 1.73z"></path></svg>
-                      </a>
-                      <a href="mailto:alessandro@alessandrostein.com">
-                        <svg class="h-8 mr-4 fill-current text-gray-500 transition-color duration-150 hover:text-gray-600 cursor-pointer" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Gmail icon</title><path d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z"/></svg>
-                      </a>
-                      <a href="https://github.com/alessandrostein" target="_blank">
-                        <svg class="h-8 mr-4 fill-current text-gray-500 transition-color duration-150 hover:text-gray-600 cursor-pointer" viewBox="0 0 2350 2315" xmlns="http://www.w3.org/2000/svg"><g stroke="none" stroke-width="1"></g><g><path d="M1175 0C525.8 0 0 525.8 0 1175c0 552.2 378.9 1010.5 890.1 1139.7-5.9-14.7-8.8-35.3-8.8-55.8v-199.8H734.4c-79.3 0-152.8-35.2-185.1-99.9-38.2-70.5-44.1-179.2-141-246.8-29.4-23.5-5.9-47 26.4-44.1 61.7 17.6 111.6 58.8 158.6 120.4 47 61.7 67.6 76.4 155.7 76.4 41.1 0 105.7-2.9 164.5-11.8 32.3-82.3 88.1-155.7 155.7-190.9-393.6-47-581.6-240.9-581.6-505.3 0-114.6 49.9-223.3 132.2-317.3-26.4-91.1-61.7-279.1 11.8-352.5 176.3 0 282 114.6 308.4 143.9 88.1-29.4 185.1-47 284.9-47 102.8 0 196.8 17.6 284.9 47 26.4-29.4 132.2-143.9 308.4-143.9 70.5 70.5 38.2 261.4 8.8 352.5 82.3 91.1 129.3 202.7 129.3 317.3 0 264.4-185.1 458.3-575.7 499.4 108.7 55.8 185.1 214.4 185.1 331.9V2256c0 8.8-2.9 17.6-2.9 26.4C2021 2123.8 2350 1689.1 2350 1175 2350 525.8 1824.2 0 1175 0z"/></g></g></svg>
-                      </a>
-                      <a href="https://linkedin.com/in/alessandrostein" target="_blank">
-                        <svg class="h-8 mr-4 fill-current text-gray-500 transition-color duration-150 hover:text-gray-600 cursor-pointer" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
-                      </a>
-                    </div>
-                </div>
-                <svg class="absolute left-0 max-w-md -ml-64 mt-24 left-svg" viewBox="0 0 423 423" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="100%" y1="0%" x2="4.48%" y2="0%" id="linearGradient-1"><stop stop-color="#5C54DB" offset="0%"/><stop stop-color="#6A82E7" offset="100%"/></linearGradient><filter x="-9.3%" y="-6.7%" width="118.7%" height="118.7%" filterUnits="objectBoundingBox" id="filter-3"><feOffset dy="8" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1"/></filter><rect id="path-2" x="63" y="504" width="300" height="300" rx="40"/></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity=".9"><g id="Desktop-HD" transform="translate(-39 -531)"><g id="Hero" transform="translate(43 83)"><g id="Rectangle-6" transform="rotate(45 213 654)"><use fill="#000" filter="url(#filter-3)" xlink:href="#path-2"/><use fill="url(#linearGradient-1)" xlink:href="#path-2"/></g></g></g></g></svg>
-            </div>
-            <div class="flex flex-col items-end justify-center h-full w-full lg:w-1/2 ms:pl-10 relative z-50">
-               <div class="relative lg:absolute max-w-4xl xl:max-w-6xl left-0 container lg:w-screen w-full">
-                   <!-- <img src="https://cdn.devdojo.com/images/september2020/macbook-mockup.png" class="mt-20 lg:mt-24 xl:mt-40 w-full h-auto mb-20 lg:mb-0 lg:h-full ml-0 lg:-ml-12 h-auto"> -->
-               </div>
-            </div>
+    <link rel="amphtml" href="/amp/index.amp.html">
+
+    <title>Alessandro Stein</title>
+  </head>
+  <body>
+    <div class="page-conteiner">
+      <div class="top-nav">
+        <div class="logo">
+          <a href="/">@alessandrostein</a>
         </div>
-    </div>
-    <!-- HERO SECTION END -->
-
-    <!-- BEGIN FEATURES SECTION -->
-    <div id="features" class="w-full relative py-10 md:py-16 lg:py-24 xl:py-40 border-t border-gray-200 px-8 xl:px-0">
-        <div class="container max-w-6xl mx-auto h-full flex flex-col justify-between items-center">
-            <h2 class="text-red-500 uppercase text-base font-medium tracking-tight my-5">We are number one</h2>
-            <h3 class="font-black text-3xl mt-2 sm:mt-0 px-5 sm:px-0 sm:text-6xl max-w-2xl leading-tight text-gray-900 text-center">We are Ruby on Rails Specialists on Fiverr</h3>
-            <div class="flex flex-col lg:flex-row w-full mt-0 sm:mt-10 lg:mt-20">
-                
-                <div class="w-full max-w-md mx-auto mb-0 sm:mb-16 lg:mb-0 lg:w-1/3 p-4">
-                    <div class="flex flex-col justify-center items-center w-full h-full mr-5 p-20 rounded-lg relative">
-                        <svg class="w-full h-full absolute fill-current text-gray-100" viewBox="0 0 377 340" xmlns="http://www.w3.org/2000/svg"><g><g><path d="M342.8 3.7c24.7 14 18.1 75 22.1 124s18.6 85.8 8.7 114.2c-9.9 28.4-44.4 48.3-76.4 62.4-32 14.1-61.6 22.4-95.9 28.9-34.3 6.5-73.3 11.1-95.5-6.2-22.2-17.2-27.6-56.5-47.2-96C38.9 191.4 5 151.5.9 108.2-3.1 64.8 22.7 18 61.8 8.7c39.2-9.2 91.7 19 146 16.6 54.2-2.4 110.3-35.6 135-21.6z"/></g></g></svg>
-                        <!-- FEATURE Icon 1 -->
-                        <svg class="w-20 h-20 relative" viewBox="0 0 24 24" width="56" height="56" stroke="#ffa534" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                        <h4 class="font-bold text-lg mt-6 relative">High ratings</h4>
-                        <p class="text-base text-gray-600 text-center mt-2 relative">We are the Rails specialist team with the highest rating on Fiverr.</p>
-                        <a href="https://www.fiverr.com/alessandrostein" target="_blank" class="flex underline text-red-500 font-medium text-sm mt-2 relative">View on Fiverr</a>
-                    </div>
-                </div>
-
-                <div class="w-full max-w-md mx-auto mb-0 sm:mb-16 lg:mb-0 lg:w-1/3 p-4">
-                    <div class="flex flex-col justify-center items-center w-full h-full mr-5 p-20 rounded-lg relative">
-                        <svg class="w-full h-full absolute fill-current text-gray-100" viewBox="0 0 358 372" xmlns="http://www.w3.org/2000/svg"><g><g><path d="M315.7 6.5c30.2 15.1 42.6 61.8 41.5 102.5-1.1 40.6-15.7 75.2-24.3 114.8-8.7 39.7-11.3 84.3-34.3 107.2-23 22.9-66.3 23.9-114.5 30.7-48.2 6.7-101.3 19.1-123.2-4.1-21.8-23.2-12.5-82.1-21.6-130.2C30.2 179.3 2.6 141.9.7 102c-2-39.9 21.7-82.2 57.4-95.6 35.7-13.5 83.3 2.1 131.2 1.7 47.9-.4 96.1-16.8 126.4-1.6z"/></g></g></svg>
-                        <!-- FEATURE Icon 2 -->
-                        <svg class="w-20 h-20 relative" viewBox="0 0 24 24" width="56" height="56" stroke="#ff6b89" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                        <h4 class="font-bold text-lg mt-6 relative">Quick Response Time</h4>
-                        <p class="text-base text-gray-600 text-center mt-2 relative">Send us a message, we will respond in less than an hour during business hours.</p>
-                        <a href="https://www.fiverr.com/alessandrostein" target="_blank" class="flex underline text-red-500 font-medium text-sm mt-2 relative">View on Fiverr</a>
-                    </div>
-                </div>
-
-                <div class="w-full max-w-md mx-auto mb-16 lg:mb-0 lg:w-1/3 p-4">
-                    <div class="flex flex-col justify-center items-center w-full h-full mr-5 p-20 rounded-lg relative">
-                        <svg class="w-full h-full absolute fill-current text-gray-100" viewBox="0 0 378 410" xmlns="http://www.w3.org/2000/svg"><g><g><path d="M305.9 14.4c23.8 24.6 16.3 84.9 26.6 135.1 10.4 50.2 38.6 90.3 43.7 137.8 5.1 47.5-12.8 102.4-50.7 117.4-37.9 15.1-95.7-9.8-151.7-12.2-56.1-2.5-110.3 17.6-130-3.4-19.7-20.9-4.7-82.9-11.5-131.2C25.5 209.5-3 174.7 1.2 147c4.2-27.7 41-48.3 75-69.6C110.1 56.1 141 34.1 184 17.5c43.1-16.6 98.1-27.7 121.9-3.1z"/></g></g></svg>
-                        <!-- FEATURE Icon 3 -->
-                        <svg class="relative h-20 w-20" style="fill: rgb(29, 191, 115);" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Fiverr icon</title><path d="M13.639,11.928h-0.954c0.06-0.258,0.216-0.492,0.534-0.492C13.465,11.436,13.639,11.664,13.639,11.928z M24.001,12 c0,6.627-5.373,12-12,12s-12-5.373-12-12s5.373-12,12-12S24.001,5.373,24.001,12z M6.217,9.78c0,0.298,0.242,0.54,0.54,0.54 c0.298,0,0.54-0.242,0.54-0.54s-0.242-0.54-0.54-0.54C6.459,9.24,6.217,9.482,6.217,9.78z M7.735,13.2h-0.42v-2.526H4.849v-0.162 c0-0.318,0.318-0.324,0.48-0.324c0.186,0,0.27,0.018,0.27,0.018V9.33c0,0-0.168-0.024-0.396-0.024c-0.516,0-1.47,0.144-1.47,1.236 v0.138h-0.45v0.81h0.45v1.71h-0.42v0.81h2.028V13.2H4.849v-1.71h1.35v1.71h-0.42v0.81h1.956V13.2z M11.149,11.484h0.372v-0.81 h-1.77v0.81h0.3l-0.384,1.2c-0.072,0.198-0.09,0.438-0.09,0.438H9.553c0,0-0.018-0.24-0.09-0.438l-0.384-1.2h0.3v-0.81h-1.77v0.81 h0.372l0.924,2.52h1.32L11.149,11.484z M14.797,12.204c0-0.924-0.558-1.608-1.548-1.608c-1.074,0-1.734,0.762-1.734,1.74 c0,0.888,0.642,1.746,1.83,1.746c0.9,0,1.434-0.468,1.434-0.468l-0.408-0.774c0,0-0.444,0.318-0.936,0.318 c-0.354,0-0.69-0.186-0.774-0.612h2.112C14.767,12.54,14.797,12.312,14.797,12.204L14.797,12.204z M17.773,10.632 c0,0-0.066-0.012-0.132-0.012c-0.51-0.006-0.93,0.366-1.068,0.822v0h-0.012c0,0,0.012-0.066,0.012-0.168V11.1 c0-0.306-0.168-0.426-0.474-0.426h-1.05v0.81h0.312c0.09,0,0.144,0.054,0.144,0.144V13.2h-0.45v0.81h2.022V13.2h-0.45v-0.486 c0-0.606,0.3-1.002,0.918-1.002c0.138,0,0.228,0.018,0.228,0.018V10.632z M20.731,11.73v-1.098c0,0-0.066-0.012-0.132-0.012 c-0.504-0.006-0.924,0.366-1.068,0.822v0h-0.012c0,0,0.012-0.066,0.012-0.168V11.1c0-0.306-0.168-0.426-0.474-0.426h-1.05v0.81 h0.312c0.09,0,0.144,0.054,0.144,0.144V13.2h-0.45v0.81h2.022V13.2h-0.45v-0.486c0-0.606,0.3-1.002,0.918-1.002 C20.641,11.712,20.731,11.73,20.731,11.73z"></path></svg>
-                        <h4 class="font-bold text-lg mt-6 relative">Level One</h4>
-                        <p class="text-base text-gray-600 text-center mt-2 relative">Great customer satisfaction, on-time delivery and high quality service give us earn a new Fiverr status.</p>
-                        <a href="https://www.fiverr.com/alessandrostein" target="_blank" class="flex underline text-red-500 font-medium text-sm mt-2 relative">View on Fiverr</a>
-                    </div>
-                </div>
-
+      </div>
+      <div class="page-content">
+        <div class="box">
+          <div class="box-profile">
+            <div class="profile-picture">
+              <img src="imagens/alessandrostein.jpg" class="image"></img>
             </div>
-        </div>
-    </div>
-    <!-- END FEATURES SECTION -->
-
-    <!-- Start Testimonials -->
-    <div id="testimonials" class="flex items-center justify-center w-full  py-10 md:py-16 lg:py-24 xl:py-40 border-t border-gray-200 px-8 xl:px-0">
-        <div class="max-w-6xl mx-auto">
-            <div class="flex-col items-center ">
-                <div class="w-full flex flex-col justify-center text-center items-center h-full pr-8 max-w-2xl mx-auto">
-                    <p class="text-red-500 uppercase text-base font-medium tracking-tight my-5">Our customers love our service</p>
-                    <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">Showcases</h2>
-                    <p class="text-gray-500 font-medium text-xl my-6">Don't just take our word for it, check it out the list of MVPs and maintenance projects that we already work on.</p>
-                    
-                </div>
-                <div class="mx-auto flex flex-col xl:flex-row max-w-2xl xl:max-w-full items-center justify-center py-8">
-                    <div class="w-full xl:w-1/2 xl:pr-8">
-                        <a href='https://www.paraisofeminino.com.br' target="_blank">
-                          <blockquote class="w-full flex flex-col-reverse md:flex-row text-center md:text-left  items-center justify-between p-6 col-span-1 bg-gray-100 rounded-lg hover:bg-white hover:shadow transition-all duration-200 ease">
-                              <div class="flex flex-col pr-8">
-                                  <div class="pl-12 relative">
-                                      <p class="text-base text-gray-600 mt-2">Search, comparator and women's fashion magazine.</p>
-                                  </div>
-          
-                                  <h3 class="pl-12 text-gray-800 text-base mt-3 leading-5 font-medium truncate">Paraíso Feminino</h3>
-                                  <p class="mt-1 text-gray-500 text-sm leading-5 truncate mt-1"></p>
-                              </div>
-                              <img src="imagens/paraiso_feminino.svg" class="w-24"></img>
-                          </blockquote>
-                        </a>
-                        <a href='https://travelbook.com/' target="_blank">
-                          <blockquote class="w-full flex flex-col-reverse md:flex-row text-center md:text-left  items-center justify-between p-6 col-span-1 bg-gray-100 rounded-lg hover:bg-white hover:shadow transition-all duration-200 ease mt-16">
-                            <div class="flex flex-col pr-10">
-                                <div class="pl-12 relative">
-                                    <p class="text-base text-gray-600 mt-2">Travel-sharing community platform where users can organize and share travelogues.</p>
-                                </div>
-        
-                                <h3 class="pl-12 text-gray-800 text-base mt-3 leading-5 font-medium truncate">TravelBook</h3>
-                                <p class="mt-1 text-gray-500 text-sm leading-5 truncate mt-1"></p>
-                            </div>
-                            <img src="imagens/travelbook.png" class="w-24"></img>
-                          </blockquote>
-                        </a>
-                    </div>
-                    <div class="w-full xl:w-1/2 xl:pl-8">
-                      <a href='http://joinshoot.com/' target="_blank">
-                        <blockquote class="w-full flex flex-col-reverse md:flex-row text-center md:text-left items-center justify-between p-6 col-span-1 bg-gray-100 rounded-lg hover:bg-white hover:shadow transition-all duration-200 ease mt-16 mb-16 xl:mb-0">
-                            <div class="flex flex-col pr-10">
-                                <div class="pl-12 relative">
-                                    <p class="text-base text-gray-600 mt-2">Search online in realtime and book your next photographer in seconds.</p>
-                                </div>
-        
-                                <h3 class="pl-12 text-gray-800 text-base mt-3 leading-5 font-medium truncate">JoinShoot</h3>
-                                <p class="mt-1 text-gray-500 text-sm leading-5 truncate mt-1"></p>
-                            </div>
-                            <img src="imagens/joinshoot.png" class="w-24"></img>
-                          </blockquote>
-                        </a>
-                        <a href='https://www.rentalocalfriend.com/' target="_blank">
-                          <blockquote class="w-full flex flex-col-reverse md:flex-row text-center md:text-left items-center justify-between p-6 col-span-1 bg-gray-100 rounded-lg hover:bg-white hover:shadow transition-all duration-200 ease mt-16 mb-16 xl:mb-0">
-                            <div class="flex flex-col pr-10">
-                                <div class="pl-12 relative">
-                                    <p class="text-base text-gray-600 mt-2">Global platform that connects people who love to travel.</p>
-                                </div>
-                                <h3 class="pl-12 text-gray-800 text-base mt-3 leading-5 font-medium truncate">Rent a Local Friend</h3>
-                                <p class="mt-1 text-gray-500 text-sm leading-5 truncate mt-1"></p>
-                            </div>
-                            <img src="imagens/rentalocalfriend.png" class="w-24"></img>
-                            <!-- <img class="w-24 h-24 bg-gray-300 rounded-full flex-shrink-0 object-cover mb-5 md:mb-0" src="https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" alt=""> -->
-                          </blockquote>
-                        </a>
-                    </div>
-                </div>
-
-
+            <div class="profile-header">
+              <h1>Alessandro Stein</h1>
             </div>
+            <div class="profile-job">
+              <h2>Software Engineer at GitHub</a></h2>
+            </div>
+            <div class="profile-links">
+              <ul>
+                <li>
+                  <a href="mailto:alessandro@alessandrostein.com" id="mailer" target="_blank">
+                    <svg aria-labelledby="simpleicons-gmail-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-gmail-icon">Gmail icon</title><path d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://medium.com/@alessandrostein" id="medium" target="_blank">
+                    <svg aria-labelledby="simpleicons-rss-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-rss-icon">RSS icon</title><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://br.linkedin.com/in/alessandrostein" id="linkedin" target="_blank">
+                    <svg aria-labelledby="simpleicons-linkedin-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-linkedin-icon">LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/alessandrostein" id="github" target="_blank">
+                    <svg aria-labelledby="simpleicons-github-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-github-icon">GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/alessandrostein" id="twitter" target="_blank">
+                    <svg aria-labelledby="simpleicons-twitter-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-twitter-icon">Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <h4>
+              You can find my resume <a href="/resume.pdf" target="_blank">here</a>
+            </h4>
+            <div class="separator"></div>
+            <div class="profile-local">
+              <h3>Jaraguá do Sul, Santa Catarina - Brazil</h3>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- End Testimonials-->
 
-</body>
+    <div class="changelog">
+      <!-- Testing an interesting product -->
+    </div>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-49363224-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
 </html>
+
+<link rel="stylesheet" href="stylesheets/site.css">
